@@ -26,11 +26,11 @@ a{
 }
 .is-header-content{
 	height: 78px;
-	width: 1482px;
 	margin: 0 auto;
 }
 .is-logo{
 	width: 122px;
+	margin-left: 220px;
 }
 .is-logo a{
 	display: block;
