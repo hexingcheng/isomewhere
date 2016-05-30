@@ -1,7 +1,9 @@
 /*css 前缀 is*/
 /*公共样式*/
-body{
-	font-size: "microsoft yahei"
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
 }
 a{
 	outline: none;
@@ -22,15 +24,22 @@ a{
 }
 /*头部css*/
 .is-header{
+	min-width: 1120px;
 	background-color: #333333
 }
 .is-header-content{
 	height: 78px;
 	margin: 0 auto;
+	width: 1120px;
+}
+.is-login-btn{
+	margin-left: 50px;
+	color: #fff;
+	line-height: 78px;
+	height: 78px;
 }
 .is-logo{
 	width: 122px;
-	margin-left: 220px;
 }
 .is-logo a{
 	display: block;
@@ -47,10 +56,9 @@ a{
 .is-nav-item{
 	font-size: 16px;
 	color: #fff;
-	float: left;
 	height: 56px;
-	margin-right: 50px;
 	padding: 20px 8px 0 8px;
+	margin-left: 50px;
 }
 .is-active{
 	border-bottom: 4px solid #72acd8;
@@ -61,4 +69,109 @@ a{
 	text-align: center;
 	line-height: 20px;
 }
-/*尾部 css
+.is-mar-left-none{
+	margin-left: 0;
+}
+/*尾部 css*/
+.is-footer{
+	min-width:1120px;
+	background-color: #333;
+}
+
+.is-footer-wrap{
+	width: 1120px;
+	margin: 0 auto;
+}
+.is-footer-title{
+	padding: 86px 0;
+	text-align: center;
+	color: #aa9374;
+	font-size: 36px;
+}
+.is-title-bottom{
+	padding-bottom: 50px;
+	font-size: 18px;
+	color: #cecece;
+	text-align: center;
+}
+.is-footer-func{
+	border-bottom:1px solid #393e43;
+	padding-bottom: 24px; 
+}
+.is-footer-func-item{
+	text-align: center;
+	width: 25%;
+	float: left;
+	color: #fff;
+	font-size: 24px;
+}
+.is-f-i-intro{
+	line-height: 50px;
+}
+.is-f-i-bg{
+	height: 68px;
+}
+.is-add-mar{
+	margin-top: 18px;
+}
+.is-footer-other{
+	padding-top: 70px;
+	padding-bottom: 76px;
+}
+.is-f-o-item{
+	text-align: center;
+	width: 16.5%;
+	float: left;
+}
+.is-first{
+	text-align: right;
+}
+.is-f-ser{
+	line-height: 26px;
+	color: #666;
+	font-size: 14px;
+}
+.is-f-ser a{
+	color: #666;
+	font-size: 14px;
+}
+.is-tel{
+	line-height: 48px;
+	font-size: 30px;
+	color: #df6c4f;
+}
+.is-download{
+	color: #fff;
+	line-height: 40px;
+}
+.is-third{
+	border-top:1px solid #393e43;
+	border-bottom: 1px solid #393e43;
+	padding-bottom: 16px;
+}
+.is-t-item{
+	padding-top: 8px;
+	float: left;
+	width: 33.33%;
+	text-align:center;
+	color: #888888;
+}
+.is-t-item span{
+	line-height: 24px;
+}
+.is-t-item a{
+	color: #888;
+	display: block;
+}
+.is-share{
+	line-height: 36px;
+	color: #666;
+	font-size: 16px;
+	text-align: center;
+}
+.is-copy{
+	font-size: 14px;
+	color: #888;
+	text-align: center;
+	line-height: 50px;
+}
