@@ -1,5 +1,11 @@
 /*css 前缀 is*/
 /*公共样式*/
+body{
+	font-size: "microsoft yahei"
+}
+a{
+	outline: none;
+}
 .is-left{
 	float: left;
 }
@@ -31,7 +37,28 @@
 	height: 78px;
 	line-height: 78px;
 }
-
-
-
+.is-logo a img{
+	margin-top: 13px;
+}
+.is-nav{
+	width: 750px;
+	height: 78px;
+}
+.is-nav-item{
+	font-size: 16px;
+	color: #fff;
+	float: left;
+	height: 56px;
+	margin-right: 50px;
+	padding: 20px 8px 0 8px;
+}
+.is-active{
+	border-bottom: 4px solid #72acd8;
+	height: 54px;
+}
+.is-en,.is-cn{
+	display: block;
+	text-align: center;
+	line-height: 20px;
+}
 /*尾部 css
