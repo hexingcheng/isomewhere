@@ -5,4 +5,43 @@
 	content: "";display: table;clear: both;
 }
 .after-line {position: relative;}
-.after-line:after {position: absolute;right: 0;top: 10px;bottom: 10px;width: 1px;background-color: #ccc;}
+.after-line:after {
+	position: absolute;
+	right: 0;top: 20px;
+    bottom: 20px;
+	width: 1px;
+	background-color: #e3e3e3;
+	content: "";
+}
+.text-center {
+	text-align: center;
+}
+.text-none {
+	text-indent: -9999px;
+}
+
+/* 栅格布局 */
+.pb-row {
+    display: block;
+    width: 100%;
+}
+.pb-row:after {
+	content: "";display: table;clear: both;
+}
+.pb-col-4 {
+    float: left;
+    width: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -25,4 +25,71 @@ body,html {
     width: 100%;width: 1120px;
     bottom: 0;height: 85px;
 }
+.content-con .left-icon-con, 
+.content-con .right-icon-con{
+    background-color: #333333;
+    width: 85px;
+    height: 100%;
+    text-align: center;
+    display: table;
+}
+.content-con .left-icon-con .icon-img, 
+.content-con .right-icon-con .icon-img{
+    display: table-cell;
+    vertical-align: middle;
+}
+.content-con .user-choose-bar {
+    margin: 0 85px;
+    height: 84px;
+    border-bottom: 1px solid #333;
+}
+.content-con .user-choose-bar li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    background: #fff;
+    height: 100%;
+    line-height: 85px;
+}
+.content-con .user-choose-bar a {
+    color: #e4e4e4;font-size: 16px;
+}
+.content-con .user-choose-bar .arrive-line img {
+    vertical-align: middle;
+}
+
+
+/* 爱远方流程 */
+.is-use-process {
+    background-color: #eeeeee;
+    padding: 30px 0;
+    color: #696969;
+}
+.is-use-process .process-con {
+    width: 1120px;
+    margin: 0 auto;
+}
+.use-process {
+    padding: 15px 0;
+}
+.use-process .inner-con {
+    text-align: center;
+    padding: 30px;
+}
+.use-process .inner-con .icon-img-box {
+    height: 80px;
+    margin-bottom: 10px;
+}
+.use-process .inner-con .title {
+    font-size: 16px;
+    color: #9d9d9d;
+}
+.use-process .inner-con .plain {
+    color: #c3c3c3;
+}
+
+
+
+
+
 
