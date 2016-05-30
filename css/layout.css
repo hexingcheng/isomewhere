@@ -1,7 +1,18 @@
 /*css 前缀 is*/
 /*公共样式*/
 .is-left{
-	
+	float: left;
+}
+.is-right{
+	float: right;
+}
+.is-clear{
+	zoom: 1;
+}
+.is-clear:after{
+	content: "";
+	display: block;
+	clear: both;
 }
 /*头部css*/
 .is-header{
@@ -11,6 +22,14 @@
 	height: 78px;
 	width: 1482px;
 	margin: 0 auto;
+}
+.is-logo{
+	width: 122px;
+}
+.is-logo a{
+	display: block;
+	height: 78px;
+	line-height: 78px;
 }
 
 
