@@ -4,3 +4,5 @@
 .clearfix:after {
 	content: "";display: table;clear: both;
 }
+.after-line {position: relative;}
+.after-line:after {position: absolute;right: 0;top: 10px;bottom: 10px;width: 1px;background-color: #ccc;}

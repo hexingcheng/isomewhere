@@ -1,117 +1,52 @@
 
-/**
- * Neat.css ½â¾öµÄÎÊÌâ
- * »ùÓÚÒµÎñÐèÒª¼æÈÝµÄä¯ÀÀÆ÷×öµ½ÒÔÏÂ¼¸µã£º
- * 1.½â¾öBUG£¬ÌØ±ðÊÇµÍ¼¶ä¯ÀÀÆ÷µÄ³£¼ûBUG£»
- * 2.Í³Ò»Ð§¹û£¬µ«²»Ã¤Ä¿×·ÇóÖØÖÃÎª0£»
- * 3.Ïòºó¼æÈÝ£»
- * 4.¿¼ÂÇÏìÓ¦Ê½£»
- * 5.¿¼ÂÇÒÆ¶¯Éè±¸¡£
- */
-
-body, dl, dd, /* dt, Ä¬ÈÏÃ»±ß¾à */
-ul, ol, /*li, Ä¬ÈÏÃ»±ß¾à */
-h1, h2, h3, h4, h5, h6, pre, /* code, Ä¬ÈÏÃ»±ß¾à */
+body, dl, dd,
+ul, ol,
+h1, h2, h3, h4, h5, h6, pre,
 form, fieldset, legend, input, textarea, optgroup,
 p, blockquote, figure, hr, menu, dir,
-thead, tbody, tfoot, th, td /* th, td Ä¬ÈÏ padding:1px */
+thead, tbody, tfoot, th, td
 {
     margin:0;
     padding:0;
 }
-
-/**
- * ·Ç´óÃæ»ýÎÄ×ÖÅÅ°æÍøÕ¾Í¨³£²»ÐèÒªÁÐ±íÏî£¬Èç¹ûÐèÒª¿Éµ¥¶ÀÉèÖÃ
- */
 ul, ol {
     list-style-type: none;
     list-style-image: none;
 }
-
-/**
- * È¥³ýÁ´½ÓÄ¬ÈÏµÄÏÂ»®Ïß£¬Ìá¸ßÎÄ×Ö¿É¶ÁÐÔ
- */
 a {
     text-decoration: none;
 }
-
-/**
-* È¥µô IE 10+ µã»÷Á´½ÓÊ±µÄ»ÒÉ«±³¾°
-*/
 a:active {
     background-color: transparent;
 }
-
-/**
- * È¥µôµã»÷Ê±µÄ½¹µã¿ò£¬Í¬Ê±±£Ö¤Ê¹ÓÃ¼üÅÌ¿ÉÒÔÏÔÊ¾½¹µã¿ò
- */
 a:active,
 a:hover {
     outline: 0 none;
 }
-
-/**
- * Í³Ò» Chrome ºÍ Safari µÄ½¹µã¿òÑùÊ½
- * Chrome ÖÐ thin ¹Ø¼ü×Ö·Å´óÒ³Ãæºó½¹µã¿ò²»»á·Å´ó http://jsbin.com/ehakom/1
- * Firefox ÖÐ box-shadow »áµ¼ÖÂ½¹µã¿òÎ»ÖÃÆ«ÒÆ£¬ÐèÓÃ¡¸outline-offset¡¹ÐÞÕý
- * 
- */
 a:focus {
     outline: 1px dotted;
 }
-
-/* ==========================================================================
-   ×ÖÌåºÍ»ù´¡ÅÅ°æ
-   ========================================================================== */
-
-/**
- * 1.·ÀÖ¹ iOS ºáÆÁ×ÖºÅ·Å´ó£¬Í¬Ê±±£Ö¤ÔÚPCÉÏ zoom ¹¦ÄÜÕý³£
- */
 html {
-    -ms-text-size-adjust: 100%; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 1 */
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
-    font-size: 62.5%; /* 10/16=62.5% */
+    font-size: 62.5%;
 }
 
 body {
     font-size: 14px;
     line-height: 1.8;
 }
-
-
-/**
- * ËùÓÐ font-family Ð¡Ð´£¬´æÔÚ¿Õ¸ñµÄ×ÖÌåÃû¼Óµ¥ÒýºÅ
- * @default-font: 'helvetica neue', tahoma, \5B8B\4F53, sans-serif;
- * @heading-font: 'helvetica neue', tahoma, 'hiragino sans gb', stheiti, 
-    \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, 'wenquanyi micro hei', sans-serif;
- * @code-font: monaco, menlo, consolas, monospace;
- */
-
-/**
- * ÖÐÎÄÓÅÏÈÊ¹ÓÃ¶¬ÇàºÚÌå¼òÌå(OS X)¡¢Î¢ÈíÑÅºÚ(Windows)ºÍÎÄÈªæäÎ¢Ã×ºÚ(Linux)
- * Î÷ÎÄÊ¹ÓÃ tahoma
- * 1. ·ÀÖ¹ÔªËØÖÐ¡¸font-family¡¹²»ÄÜ¼Ì³Ð
- * 2. Î÷ÎÄ×ÖÌåºÍ OS X ×ÖÌåÐ´ÔÚÇ°Ãæ
- * 3. Opera 12.1 Ö®Ç°°æ±¾²»Ö§³ÖÖÐÎÄ×ÖÌåµÄÓ¢ÎÄÃû³Æ
- * 4. Î¢ÈíÑÅºÚ¡¸\5FAE\8F6F\96C5\9ED1¡¹,ÖÐÒ×ËÎÌå¡¸\5B8B\4F53¡¹
- */
 body,
-button, /* 1 */
-input, /* 1 */
-select, /* 1 */
-textarea  /* 1 */
+button,
+input,
+select,
+textarea
 {
     font-family: 'helvetica neue',tahoma,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
-    -ms-text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis; /* 5 */
-    text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis; /* 5 */
+    -ms-text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis;
+    text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis;
 }
-
-/**
- * ÖÐÎÄÐ¡ÓÚ 12px ¿É¶ÁÐÔºÜ²î
- * 1. Í³Ò» IE 6-7 ÖÐ×ÖÌå´óÐ¡
- * 2. Í³Ò» Firefox 4+£¬Safari 5 ºÍ Chrome ÖÐ¡¸section¡¹ºÍ¡¸article¡¹ÄÚµÄ×ÖÌå´óÐ¡
- */
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 } 
@@ -139,107 +74,50 @@ h5 {
 h6 {
     font-size: 12px;
 }
-
-/**
- * ÐÞÕý¡¸abbr¡¹ÔªËØÔÚ Firefox ÍâÆäËûä¯ÀÀÆ÷Ã»ÓÐÏÂ»®ÏßµÄÎÊÌâ
- * Ìí¼ÓÎÊºÅ¹â±ê£¬Ã÷È·ÓïÒå
- */
 abbr,
 acronym {
-    border-bottom: 1px dotted; /* 1 */
-    cursor:help; /* 2 */
+    border-bottom: 1px dotted;
+    cursor:help;
 }
-
-/**
- * Firefox3+£¬Safari4/5 ºÍ Chrome ÖÐÍ³Ò»ÉèÖÃÎª´ÖÌå
- */
 b,
 strong {
     font-weight: bold;
 }
-
-/**
- * ÐÞÕý Safari5 ºÍ Chrome ÖÐÃ»ÓÐÑùÊ½µÄÎÊÌâ
- */
 dfn {
     font-style: italic;
 }
-
-/**
- * ÐÞÕý Firefox ºÍÆäËûä¯ÀÀÆ÷Ö®¼äµÄ²îÒì
- */
 hr {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     height: 0;
 }
-
-/**
- * ÍøÒ³±ê¼Ç£¬Ó«¹â±Ê
- * ÐÞÕý IE6-11 ÖÐÃ»ÓÐÑùÊ½µÄÎÊÌâ
- */
 mark {
     background-color: #D2E5FF;
     color: #000;
 }
-
-/**
- * Í³Ò»´úÂëµÄ×ÖÌåÉèÖÃ
- * ×ÖÌåÒªÄÜÃ÷È·Çø·ÖÊý×Ö 0 ºÍ×ÖÄ¸ o
- * Mac ÓÅÏÈÊ¹ÓÃ Monaco£¬Windows ÓÅÏÈÊ¹ÓÃ Consolas
- * XP×Ô´ø Courier New
- * Windows 7¿ªÊ¼×Ô´øµÄ Consolas
- * MacÉÏ×Ô´øµÄMonaco£¬Osaka-Mono
- */
 code,
 kbd,
 pre,
 samp {
     font-family: monaco, menlo, consolas, 'courier new', courier, monospace;
 }
-
-/**
- * ÔöÇ¿ËùÓÐä¯ÀÀÆ÷ÖÐ pre ±êÇ©ÖÐÎÄ±¾µÄ¿É¶ÁÐÔ
- * 1. IE 6-7 ²»Ö§³Ö pre-wrap
- * 2. pre ±êÇ©Ó¦µ±°üº¬¹öÒç³ö
- */
 pre {
     white-space: pre; 
-    white-space: pre-wrap; /* 1 */
+    white-space: pre-wrap;
     word-wrap: break-word;
     overflow: auto;
 }
-
-/**
- * ÐÐÄÚÒýÓÃ
- * IE 6-7 ²»Ö§³Ö quotes ÊôÐÔ
- * ÏÖ´úä¯ÀÀÆ÷È¥³ý quotes ÄÚÈÝ
- */
 q {
     quotes: none;
 }
-
-/**
- * Safari 4 ²»Ö§³Ö<q>±êÇ©
- */
 q:before,
 q:after {
     content: '';
     content: none;
 }
-
-
-/**
- * ÖÐÎÄÍøÒ³<small>ÔªËØ×ÖºÅÐ¡ÓÚ 12px ²»Ò×ÔÄ¶Á
- */
 small {
-    font-size: 85.7%; /* 12/14=0.8571428571 */
+    font-size: 85.7%;
 }
-
-/**
- * ·ÀÖ¹ËùÓÐä¯ÀÀÆ÷ÖÐµÄ<sub>ºÍ<sup>Ó°ÏìÐÐ¸ß
- * http://jsbin.com/usoyal/1/edit
- */
 sub,
 sup {
     font-size: 75%;
@@ -255,269 +133,125 @@ sup {
 sub {
     bottom: -0.25em;
 }
-
-/* ==========================================================================
-   ±í¸ñ
-   ========================================================================== */
-
-/**
- * ºÏ²¢µ¥Ôª¸ñ±ß¿ò
- */
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-/**
- * ÐÞ¸´ IE ÖÐ th ²»ÄÜ¼Ì³Ð text-align µÄÎÊÌâ²¢Í³Ò»×ó¶ÔÆë
- * http://jsbin.com/evoxif/2/edit
- */
 th {
     text-align: left;
 }
-
-/**
- * µ¥Ôª¸ñÌí¼Ó±ß¿ò
- */
 table th,
 table td {
     border: 1px solid #ddd;
     padding: 8px 10px;
 }
-
-/**
- * ±íÍ·µ×²¿±ß¿ò
- */
 table th {
     font-weight: inherit;
     border-bottom-width: 2px;
     border-bottom-color: #ccc;
 }
-
-/* ==========================================================================
-   Ç¶ÈëÔªËØ
-   ========================================================================== */
-
-/**
- * 1. È¥³ý IE6-9 ºÍ Firefox 3 ÖÐ a ÄÚ²¿ img ÔªËØÄ¬ÈÏµÄ±ß¿ò
- * 2. ÐÞÕý IE8 Í¼Æ¬ÏûÊ§bug
- * 3. ·ÀÖ¹ img Ö¸¶¨¡¸height¡¹Ê±Í¼Æ¬¸ß¶È²»ÄÜ°´ÕÕ¿í¶ÈµÈ±ÈËõ·Å£¬µ¼ÖÂÍ¼Æ¬±äÐÎ
-      http://jsbin.com/aJoTUca/2
- * 4. ÈÃÍ¼Æ¬Ö§³ÖÏìÓ¦Ê½
- * 5. È¥³ýÏÖ´úä¯ÀÀÆ÷Í¼Æ¬µ×²¿µÄ¿ÕÏ¶
- * 6. ÐÞ¸´ IE7 Í¼Æ¬Ëõ·ÅÊ§Õæ
- */
 img {
-    border: 0 none; /* 1 */
-    width: auto\9; /* 2 */
-    height: auto; /* 3 */
-    max-width: 100%; /* 4 */
-    vertical-align: top;/* 5 */
-    -ms-interpolation-mode: bicubic; /* 6 */
+    border: 0 none;
+    width: auto\9;
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+    -ms-interpolation-mode: bicubic;
 }
-
-/**
- * ÐÞ¸´ IE9 ÖÐµÄ¡¸overflow¡¹µÄ¹ÖÒì±íÏÖ
- */
 svg:not(:root) {
     overflow: hidden;
 }
-
-/* ==========================================================================
-   ±íµ¥
-   ========================================================================== */
-
-/**
- * ¶¨ÒåÒ»ÖÂµÄ±ß¿ò¡¢Íâ±ß¾àºÍÄÚ±ß¾à
- */
 fieldset {
     border: 1px solid #c0c0c0;
     margin: 0 2px;
     padding: 0.35em 0.625em 0.75em;
 }
-
-/**
- * 1. ÐÞÕý IE 6-9 ÖÐÑÕÉ«²»ÄÜ¼Ì³ÐµÄÎÊÌâ
- * 2. ÐÞÕý Firefox3 ÖÐÎÄ×Ö²»»»ÐÐµÄÎÊÌâ
- * 3. ÐÞÕý IE6-7 ÖÐ¹ÖÒìµÄ¶ÔÆë·½Ê½
- */
 legend {
-    border: 0 none; /* 1 */
-    white-space: normal; /* 2 */
-    *margin-left: -7px; /* 3 */
+    border: 0 none;
+    white-space: normal;
+    *margin-left: -7px;
 }
-
-/**
- * 1. ÐÞÕýËùÓÐä¯ÀÀÆ÷ÖÐ×ÖÌå²»¼Ì³ÐµÄÎÊÌâ
- * 2. ÐÞÕýËùÓÐä¯ÀÀÆ÷ÖÐ×ÖºÅ²»¼Ì³ÐµÄÎÊÌâ
- * 3. ÐÞÕý Firefox 3+£¬ Safari5 ºÍ Chrome ÖÐÍâ±ß¾à²»Í¬µÄÎÊÌâ
- * 4. ¸ÄÉÆÔÚËùÓÐä¯ÀÀÆ÷ÏÂµÄ´¹Ö±¶ÔÆë·½Ê½
- */
 button,
 input,
 select,
 textarea {
-    font-family: inherit; /* 1 */
-    font-size: 100%; /* 2 */
-    margin: 0; /* 3 */
-    vertical-align: baseline; /* 4 */
-    *vertical-align: middle; /* 4 */
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
 }
-
-/**
- * ÐÞÕý IE7 Ëæ×Å×ÖÊýÔö¼Ó±ß¾à²»¶ÏÔö¼ÓµÄÎÊÌâ
- */
 input,
 button {
     *overflow: visible;
 }
-
-/**
- * Í³Ò»¸÷ä¯ÀÀÆ÷¡¸text-transform¡¹²»»á¼Ì³ÐµÄÎÊÌâ
- * http://jsbin.com/iqecic/1/edit
- * http://tjvantoll.com/2012/07/10/default-browser-handling-of-the-css-text-transform-property/
- */
 button,
 select {
     text-transform: none;
 }
-
-/**
- * 1. ±ÜÃâ Android 4.0.* ÖÐµÄ WebKit bug £¬¸Ãbug»áÆÆ»µÔ­ÉúµÄ
-   ¡¸audio¡¹ ºÍ¡¸video¡¹µÄ¿ØÖÆÆ÷
- * 2. ¸üÕý iOS ÖÐÎÞ·¨ÉèÖÃ¿Éµã»÷µÄ¡¸input¡¹µÄÎÊÌâ
- * 3. Í³Ò»ÆäËûÀàÐÍµÄ¡¸input¡¹µÄ¹â±êÑùÊ½
- */
 button,
-html input[type="button"], /* 1 */
+html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    -webkit-appearance: button; /* 2 */
-    cursor: pointer; /* 3 */
+    -webkit-appearance: button;
+    cursor: pointer;
 }
-
-/**
- * ÖØÖÃ°´Å¥½ûÓÃÊ±¹â±êÑùÊ½
- */
 button[disabled],
 input[disabled] {
     cursor: default;
 }
-
-/**
- * 1. ÐÞÕý IE 8/9 box-sizing ±»ÉèÖÃÎª¡¸content-box¡¹µÄÎÊÌâ
- * 2. ÒÆ³ý IE 8/9 ÖÐ¶àÓàµÄÄÚ±ß¾à
- * 3. ÒÆ³ý IE7 ÖÐ¶àÓàµÄÄÚ±ß¾à(IE6 ÖÐÈÎÈ»´æÔÚ)
- */
 input[type="checkbox"],
 input[type="radio"] {
-    box-sizing: border-box; /* 1 */
-    padding: 0; /* 2 */
-    *height: 13px; /* 3 */
-    *width: 13px; /* 3 */
-}
-
-/**
- * 1. ÐÞÕý Safari 5 ºÍ Chrome ÖÐ¡¸appearance¡¹±»ÉèÖÃÎª¡¸searchfield¡¹µÄÎÊÌâ
- * 2. ÐÞÕý Safari 5 ºÍ Chrome ÖÐ¡¸box-sizing¡¹±»ÉèÖÃÎª ¡¸border-box¡¹µÄÎÊÌâ
- */    
+    box-sizing: border-box;
+    padding: 0;
+    *height: 13px;
+    *width: 13px;
+}   
 input[type="search"] {
-    -webkit-appearance: textfield; /* 1 */
+    -webkit-appearance: textfield;
     -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; /* 2 */
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
 }
-    
-/**
- * 1.ÒÆ³ý OS X ÖÐ Safari5 ºÍ Chrome ËÑË÷¿òÄÚ²àµÄ×ó±ß¾à
- * 2.Èç¹ûÐèÒªÒþ²ØÇå³ý°´Å¥ÐèÒª¼ÓÉÏ
-   input[type="search"]::-webkit-search-cancel-button
- */
-input[type="search"]::-webkit-search-decoration /* 1 */
+input[type="search"]::-webkit-search-decoration
 {
     -webkit-appearance: none;
 }
-    
-/**
- * ÒÆ³ý Firefox 3+ µÄÄÚ±ß¾à
- */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
-
-/**
- * ÐÞÕý Chrome ÖÐ input [type="number"] ÔÚÌØ¶¨¸ß¶ÈºÍ font-size Ê±,
- * ÏÂÃæÒ»¸ö¼ýÍ·¹â±ê±ä³É¡¸cursor: text¡¹
- * @demo: http://jsfiddle.net/FFXEc/
- * ¶¯»­ÑÝÊ¾£ºhttp://gtms04.alicdn.com/tps/i4/T18kd8FCtaXXc_FhcF-330-350.gif
- */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     height: auto;
 }
-
-/**
- * 1. ÒÆ³ý IE6-11 ÖÐÄ¬ÈÏµÄ´¹Ö±¹ö¶¯Ìõ
- * 2. ½ûÖ¹Ë®Æ½ÍÏ¶¯£¬·ÀÖ¹ÆÆ»µ²¼¾Ö
- */
 textarea {
-    overflow: auto; /* 1 */
-    resize: vertical; /* 2 */
+    overflow: auto;
+    resize: vertical;
 }
-
-/**
- * ÐÞÕý Chrome 30- option ÖÐÎÄ×ÖÎÞ·¨ÏÔÊ¾µÄÎÊÌâ
- * http://jsbin.com/avujas/1/edit 
- */
 select:disabled option:checked,
 option:disabled:checked {
     color: #D2D2D2;
 }
-
-/**
- * ÐÞÕý Safari 3+, Chrome 1+ Placeholder ¾ÓÖÐÎÊÌâ
- */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     input {
         line-height: normal !important;
     }
 }
-
-/**
- * ÐÞÕý Firefox 19+ Placeholder ÉèÖÃÁËopacity µÄÎÊÌâ
- */
 input::-moz-placeholder, textarea::-moz-placeholder {
     color: darkGray;
     opacity: 1;
 }
-
-/**
- * label ÔªËØ¸øÓèÊÖÐÍ£¬°µÊ¾´Ë´¦¿Éµã»÷
- */
 label {
     cursor: pointer;
 }
-
-/**
- * Í³Ò» select ÑùÊ½, Firefox ÖÐÓÐ padding:1px 0
- * http://jsbin.com/avujas/1/edit
- */
 select[size],
 select[multiple],
 select[size][multiple] {
     border: 1px solid #AAA;
     padding:0;
 }
-
-/* ==========================================================================
-   HTML5 ÔªËØ
-   ========================================================================== */
-
-/**
- * ÐÞÕýÎ´¶¨ÒåÎª¡¸block¡¹µÄÔªËØ
- */
 article,
 aside,
 details,
@@ -532,52 +266,23 @@ section,
 summary {
     display: block;
 }
-
-/**
- * 1. ÐÞÕýÎ´¶¨ÒåÎª¡¸inline-block¡¹µÄÔªËØ
- * 2. ÐÞÕý Chrome¡¢Firefox¡¢Opera ÖÐ ¡¸progress¡¹ÔªËØ vertical-align Ä¬ÈÏÖµ²»Ò»ÖÂ
- */
 audio,
 canvas,
 video,
 progress {
-    display: inline-block; /* 1 */
-    vertical-align: baseline; /* 2 */
+    display: inline-block;
+    vertical-align: baseline;
 }
-
-/**
- * 1.·ÀÖ¹ÏÖ´úä¯ÀÀÆ÷½«Ã»ÓÐ¡¸controls¡¹ÊôÐÔµÄ ¡¸audio¡¹ÔªËØÏÔÊ¾³öÀ´
- * 2.È¥µô iOS 5 ÖÐ¶àÓàµÄ¸ß¶È
- */
 audio:not([controls]) {
-    display: none; /* 1 */
-    height: 0; /* 2 */
+    display: none;
+    height: 0;
 }
-
-/**
- * ÐÞ¸´ IE 7/8/9£¬Firefox 3 ºÍ Safari 4 ÖÐ ¡¸hidden¡¹ÊôÐÔ²»Æð×÷ÓÃµÄÎÊÌâ
- * ÔÚIE¡¢Safari¡¢Firefox 22- ÖÐÒþ²Ø¡¸template¡¹ÔªËØ
- */
 [hidden], template {
     display: none;
 }
-
-/**
- * Îª¿ÉÍÏ¶¯ÔªËØÌí¼ÓÍÏ¶¯µÄ¹â±ê
- * http://jsbin.com/apavod/1/edit
- */
 [draggable] {
     cursor: move;
 }
-
-/**
- * ¾ÓÖÐ HTML5 dialog ÔªËØ
- * Chrome 31 Ö§³Ö£¬Ðè¿ªÆô chrome://flags/#enable-experimental-web-platform-features
- * Chrome 28 Ö®Ç°¡¢Firefox ÖÐ²»Ö§³Ö height:fit-content; 
-   https://src.chromium.org/viewvc/blink?revision=148314&view=revision
- * ::backdrop ¶¨ÒåÕÚÕÖÑùÊ½
- * @demo: http://jsbin.com/iPACab/1
- */
 dialog {
     border: 1px solid;
     padding: 0;

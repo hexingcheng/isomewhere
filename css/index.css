@@ -1,1 +1,28 @@
+body,html {
+	font-family: "Microsoft YaHei",Arial,sans-serif;
+}
+
+
+/* 头部轮播样式 */
+.is-carousel-con {
+    position: relative;
+}
+.is-carousel-con .carousel-item {
+    height: 660px;
+    overflow: hidden;
+}
+.is-carousel-con .content-con {
+    width: 1120px;
+    margin: 0 auto;
+    color: #fff;
+}
+.is-carousel-con .text-plain {
+    position: absolute;
+    top: 210px;width: 1120px;
+}
+.is-carousel-con .bottom-bar {
+    position: absolute;
+    width: 100%;width: 1120px;
+    bottom: 0;height: 85px;
+}
 
