@@ -16,6 +16,9 @@
 .text-center {
 	text-align: center;
 }
+.text-right {
+	text-align: right;
+}
 .text-none {
 	text-indent: -9999px;
 }
@@ -28,11 +31,14 @@
 .pb-row:after {
 	content: "";display: table;clear: both;
 }
-.pb-col-4 {
+.pb-col-3 {
     float: left;
     width: 25%;
 }
-
+.pb-col-4 {
+    float: left;
+    width: 33.3333%;
+}
 
 
 
