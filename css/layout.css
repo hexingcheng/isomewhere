@@ -6,7 +6,7 @@ body {
   line-height: 1;
 }
 a{
-	outline: none;
+	outline: none!important;
 }
 .is-left{
 	float: left;
