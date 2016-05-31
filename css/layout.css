@@ -184,7 +184,7 @@ a{
 .is-body-hidden{
 	overflow: hidden;
 }
-.is-mask{
+.is-body-hidden .is-mask{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -198,13 +198,88 @@ a{
 .is-login{
 	width: 600px;
 	height: 312px;
-	position: absolute;
-	top: -50%;
-	left: 50%;
-	margin-top: -156px;
-	margin-left: -300px;
 	background-color: #fff;
 	border-radius: 2px;
-	z-index: 3;
-
+	z-index: 10;
+	position: absolute;
+	top: -312px;
+	left: 50%;
+	margin-left: -300px;
+	margin-top: -156px;
+	transition: top 0.4s;
+}
+.is-login-tocenter {
+  top: 50%;
+}
+.is-circle{
+	width: 112px;
+	height: 112px;
+	border-radius: 50%;
+	position: absolute;
+	top: -56px;
+	left: 50%;
+	margin-left: -56px;
+	background: url(../image/icons/is-login-icon.png) center center no-repeat #eeeeee;
+}
+.is-login-close{
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	background: url(../image/icons/login-close.png) center center no-repeat;
+	position: absolute;
+	top: 12px;
+	right: 22px;
+}
+.is-form{
+	margin-top: 64px;
+	color: #d8d8d8;
+}
+.is-email{
+	border-bottom: 1px solid #d2d2d2
+}
+.is-left-icon{
+	width: 50px;
+	height: 54px;
+	float: left;
+}
+.is-right-input{
+	height: 54px;
+	overflow: hidden;
+}
+.is-email-icon{
+	background: url(../image/icons/is-email-icon.png) center center no-repeat;
+}
+.is-pass-icon{
+	background: url(../image/icons/is-pass-icon.png) center center no-repeat;
+}
+.is-l-input{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	border:0;
+	outline: none;
+}
+.is-submit{
+	height: 80px;
+	border-bottom: 1px solid #d2d2d2;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	width: 100%;
+	outline: none;
+	background-color: #444444;
+	text-align: center;
+	line-height: 80px;
+	color: #fff;
+}
+.is-r-btn,.is-forget-btn{
+	line-height: 60px;
+	color: #444;
+}
+.is-r-btn{
+	padding-left: 22px;
+}
+.is-forget-btn{
+	padding-right: 22px;
 }
