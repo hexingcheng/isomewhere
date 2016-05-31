@@ -38,18 +38,50 @@
 .pb-row:after {
 	content: "";display: table;clear: both;
 }
+.pb-col-1,.pb-col-2,.pb-col-3,.pb-col-4,.pb-col-5,
+.pb-col-6,.pb-col-7,.pb-col-8,.pb-col-9,.pb-col-10,
+.pb-col-11,.pb-col-12 {
+	float: left;
+}
+.pb-col-1 {
+    width: 12%;
+}
+.pb-col-2 {
+    width: 16.67%;
+}
 .pb-col-3 {
-    float: left;
     width: 25%;
 }
 .pb-col-4 {
-    float: left;
-    width: 33.3333%;
+    width: 33.333%;
 }
-.pb-col-2 {
-    float: left;
-    width: 16.67%;
+.pb-col-5 {
+    width: 41.667%;
 }
+.pb-col-6 {
+    width: 50%;
+}
+.pb-col-7 {
+    width: 58.333%;
+}
+.pb-col-8 {
+    width: 66.667%;
+}
+.pb-col-9 {
+    width: 75%;
+}
+.pb-col-10 {
+    width: 83.333%;
+}
+.pb-col-11 {
+    width: 91.667%;
+}
+.pb-col-12 {
+    width: 100%;
+}
+
+
+
 
 /* 按钮  默认按钮样式*/
 .pb-btn {

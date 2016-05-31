@@ -51,7 +51,7 @@ body,html {
 }
 
 /* 内容区样式共有 */
-.list-title {
+.list-bar-title {
 	padding: 20px;
     border-bottom: 1px solid #eee;
     font-size: 20px;
@@ -170,7 +170,7 @@ body,html {
 .order-list .amount-num li .num {
 	color: #ea9e8c;
     font-size: 24px;
-    padding: 0 5px;
+    padding: 0 3px;
 }
 
 
