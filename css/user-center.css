@@ -21,13 +21,13 @@ body,html {
     padding: 40px 0;
 }
 .is-user-con .is-userhead-box .head-img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     margin: 15px auto;
 }
 .is-user-con .is-userhead-box .head-img img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
 }
 
 /* 菜单 */
