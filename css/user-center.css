@@ -131,13 +131,15 @@ body,html {
 	padding: 30px 0;
     border-bottom: 1px solid #eee;
 }
-.trip-list .list-item .btn-group {
+.trip-list .list-item .btn-group,
+.travel-list .travel-item .btn-group {
     width: 200px;
     text-align: center;
     position: relative;
     top: 10px;
 }
-.trip-list .list-item .btn-group button {
+.trip-list .list-item .btn-group button,
+.travel-list .travel-item .btn-group button {
     width: 55px;
     height: 35px;
     background: #333;
@@ -172,6 +174,50 @@ body,html {
     font-size: 24px;
     padding: 0 3px;
 }
+
+
+/* 我的游记 */
+.travel-list .list-bar-title span {
+	color: #bebebe;
+}
+.travel-list .travel-item {
+    padding: 20px 0;
+}
+.travel-list .travel-item .cover-img {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+}
+.travel-list .travel-item .cover-img img {
+    width: 130px;
+    height: 130px;
+}
+.travel-list .travel-item .travel-content {
+    margin: 0 230px 0 180px;
+    width: auto;height: 130px;
+}
+.travel-list .travel-item .travel-content span {
+    height: 100%;
+    font-size: 20px;
+    line-height: 25px;
+	color: #bebebe;
+}
+.travel-list .travel-item .travel-content span.time-date {
+    line-height: 130px;
+}
+.travel-list .travel-item .travel-content .text-title {
+    display: table;
+}
+.travel-list .travel-item .travel-content .text-title .inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.travel-list .travel-item .btn-group {
+	top: 45px;
+}
+
+
+/* 充值和消费 */
 
 
 
