@@ -50,6 +50,16 @@ body,html {
     text-align: center;
 }
 
+/* 内容区样式共有 */
+.list-bar-title {
+	padding: 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 20px;
+}
+.num-color {
+	color: #ea9e8c;
+    font-size: 24px;
+}
 
 /* 个人中心内容区 */
 .is-content-con .is-content-inner {
@@ -66,30 +76,31 @@ body,html {
     padding: 50px 0;
     border-bottom: 1px solid #eee;
 }
+
 .is-content-inner .self-index p.amount {
     font-size: 21px;
     color: #ea9e8c;    
     padding: 10px 0;
 }
-.self-index .trip-list,
+.self-index .new-trip-list,
 .self-index .recent-trip-list {
 	padding: 0 0 50px 0;
     color: #bebebe;
     border-bottom: 1px solid #eee;
 }
-.self-index .trip-list .title-plain,
+.self-index .new-trip-list .title-plain,
 .self-index .recent-trip-list .title-plain {
 	font-size: 20px;
 	padding: 20px;
 }
-.self-index .trip-list .table-title,
+.self-index .new-trip-list .table-title,
 .self-index .recent-trip-list .table-title {
     text-align: center;
     font-size: 16px;
     height: 40px;
     line-height: 40px;
 }
-.self-index .trip-list .data-list,
+.self-index .new-trip-list .data-list,
 .self-index .recent-trip-list .data-list {
     text-align: center;
     height: 30px;
@@ -97,19 +108,70 @@ body,html {
 }
 
 
-/*  */
+/* 行程单列表 */
+.trip-list, .order-list {
+    padding: 10px 0 30px 0;
+    color: #bebebe;
+}
+.trip-list .self-trip-list,
+.order-list .order-amount {
+    margin-top: 40px;
+}
+.trip-list .trip-title {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+.trip-list .trip-title a {
+    font-size: 16px;
+}
+.trip-list .trip-title span {
+	font-size: 20px;
+}
+.trip-list .list-item {
+	padding: 30px 0;
+    border-bottom: 1px solid #eee;
+}
+.trip-list .list-item .btn-group {
+    width: 200px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+.trip-list .list-item .btn-group button {
+    width: 55px;
+    height: 35px;
+    background: #333;
+    color: #fff !important;
+}
+.trip-list .list-item .list-con {
+    margin-right: 200px;
+}
+.trip-list .list-item ul li {
+    text-align: center;
+}
+.trip-list .list-item .list-title li {
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+}
+.trip-list .list-item .data-list {
+    height: 24px;
+    line-height: 24px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+/* 我的订单 */
+.order-list .amount-num {
+    padding: 20px 0;
+}
+.order-list .amount-num li {
+	text-indent: 20px;
+	font-size: 16px;
+}
+.order-list .amount-num li .num {
+	color: #ea9e8c;
+    font-size: 24px;
+    padding: 0 3px;
+}
 
 
 
