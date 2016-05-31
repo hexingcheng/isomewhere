@@ -1,6 +1,10 @@
 /*css 前缀 is*/
 /*公共样式*/
+html,body{
+	height: 100%
+}
 body {
+	position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
@@ -174,4 +178,33 @@ a{
 	color: #888;
 	text-align: center;
 	line-height: 50px;
+}
+/*登录注册部分*/
+/*遮盖层*/
+.is-body-hidden{
+	overflow: hidden;
+}
+.is-mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	background-color: #000;
+	opacity: 0.3;
+	filter:alpha(opacity=30);
+}
+.is-login{
+	width: 600px;
+	height: 312px;
+	position: absolute;
+	top: -50%;
+	left: 50%;
+	margin-top: -156px;
+	margin-left: -300px;
+	background-color: #fff;
+	border-radius: 2px;
+	z-index: 3;
+
 }
