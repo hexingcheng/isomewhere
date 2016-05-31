@@ -1,5 +1,6 @@
 body,html {
 	font-family: "Microsoft YaHei",Arial,sans-serif;
+    min-width: 1120px;
 }
 
 .is-content h1 {
@@ -9,6 +10,20 @@ body,html {
     line-height: 1.5;
 }
 
+/* is-content */
+.is-header {
+    background-color: rgba(0,0,0, .4);
+    position: relative;
+    z-index: 100;
+    min-width: 1120px;
+}
+.is-content {
+    margin-top: -80px;
+    position: relative;
+    min-width: 1120px;
+}
+
+
 /* 头部轮播样式 */
 .is-carousel-con {
     position: relative;
@@ -16,6 +31,7 @@ body,html {
 .is-carousel-con .carousel-item {
     height: 560px;
     overflow: hidden;
+    min-width: 1120px;
 }
 .is-carousel-con .carousel-item img {
     background-repeat: no-repeat;
@@ -32,7 +48,6 @@ body,html {
 .is-carousel-con .text-plain {
     position: absolute;
     top: 196px;
-    width: 1120px;
     margin-left: 100px;
 }
 .is-carousel-con .bottom-bar {
@@ -123,7 +138,7 @@ body,html {
 }
 .item-box .theme-cover {
     position: relative;
-    height: 100%;
+    height: 100%;overflow: hidden;
 }
 .item-box .theme-cover .cover-img {
     width: 680px;
@@ -161,6 +176,53 @@ body,html {
 }
 .dt-con .item-box .theme-contr .see-more.text-right {
     right: 0px;
+}
+.dt-con .message-wrap {
+    position: absolute;
+    right: -230px;
+    top: 0;
+    background: rgba(0,0,0, .5);
+    width: 200px;
+    height: 251px;
+    color: #fff;
+    padding: 15px;
+    transition: all .3s ease-in-out;
+}
+.dt-con .message-wrap p {
+    color: #fff;padding: 2px 0;
+}
+.dt-con .message-wrap .inner-box {
+    width: 100%;
+    height: 100%;
+}
+.dt-con .message-wrap .inner-box .message-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 31px;
+    height: 31px;
+}
+.dt-con .message-wrap .inner-box .head-wrap {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.dt-con .message-wrap .inner-box .button-group a {
+    color: #fff;
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    line-height: 30px;
+    border-radius: 5px;
+    background-color: #72acd8;
+}
+.dt-con .theme-cover:hover .message-wrap {
+    right: 0px;
+}
+.dt-con .message-wrap p.text-plain {
+    max-height: 70px;
 }
 
 
@@ -241,9 +303,10 @@ body,html {
 
 /*  轮播  */
 #banner_tabs .slides li {
-    height: 560px;
+    height: 640px;
     overflow: hidden;
     width: 100%;
+    min-width: 1120px;
 }
 .flex-direction-nav a {
     width: 70px;

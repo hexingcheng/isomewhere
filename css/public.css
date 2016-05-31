@@ -22,6 +22,13 @@
 .text-none {
 	text-indent: -9999px;
 }
+.po-rel {
+	position: relative;
+}
+.border-circle {
+	border-radius: 50%;
+	overflow: hidden;
+}
 
 /* 栅格布局 */
 .pb-row {
@@ -39,10 +46,76 @@
     float: left;
     width: 33.3333%;
 }
+.pb-col-2 {
+    float: left;
+    width: 16.67%;
+}
 
+/* 按钮  默认按钮样式*/
+.pb-btn {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    display: inline-block;
+    border: 1px solid #ddd;
+    *border: 0 none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    *margin-right: .3em;
+    margin-bottom: 0;
+    padding: 0 10px;
+    *padding: 1px 10px;
+    width: auto;
+    height: 21px;
+    line-height: 21px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom-color: #bbb !important;
+    background-color: #f4f4f4;
+    background-image: -moz-linear-gradient(top, #f8f8f8, #eeeeee);
+    background-image: -ms-linear-gradient(top, #f8f8f8, #eeeeee);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f8f8f8), to(#eeeeee));
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #eeeeee);
+    background-image: -o-linear-gradient(top, #f8f8f8, #eeeeee);
+    background-image: linear-gradient(top, #f8f8f8, #eeeeee);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#eeeeee', GradientType=0);
+}
 
+.pb-btn,
+.pb-btn:hover,
+.pb-btn:visited {
+    color: #333 !important;
+}
 
+.pb-btn:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: #ededed;
+    background-image: -moz-linear-gradient(top, #f2f2f2, #e6e6e6);
+    background-image: -ms-linear-gradient(top, #f2f2f2, #e6e6e6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6);
+    background-image: -o-linear-gradient(top, #f2f2f2, #e6e6e6);
+    background-image: linear-gradient(top, #f2f2f2, #e6e6e6);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#e6e6e6', GradientType=0);
+}
 
+.pb-btn:active {
+    background-color: #ebebeb;
+    background-image: -moz-linear-gradient(top, #e6e6e6, #f2f2f2);
+    background-image: -ms-linear-gradient(top, #e6e6e6, #f2f2f2);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e6e6e6), to(#f2f2f2));
+    background-image: -webkit-linear-gradient(top, #e6e6e6, #f2f2f2);
+    background-image: -o-linear-gradient(top, #e6e6e6, #f2f2f2);
+    background-image: linear-gradient(top, #e6e6e6, #f2f2f2);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e6e6', endColorstr='#f2f2f2', GradientType=0);
+}
 
 
 

@@ -1,0 +1,115 @@
+body,html {
+	font-family: "Microsoft YaHei",Arial,sans-serif;
+    min-width: 1120px;
+}
+
+/* 公有 */
+.is-footer-title,
+.is-footer-func {
+	display: none;
+}
+
+
+/* 个人中心头部样式 */
+.is-user-con {
+    background-color: #444444;
+    color: #fff;
+}
+.is-user-con .is-userhead-box {
+    width: 1120px;
+    margin: 0px auto;
+    padding: 40px 0;
+}
+.is-user-con .is-userhead-box .head-img {
+    width: 80px;
+    height: 80px;
+    margin: 15px auto;
+}
+.is-user-con .is-userhead-box .head-img img {
+    width: 80px;
+    height: 80px;
+}
+
+/* 菜单 */
+.is-user-con .is-menu-con {
+    width: 1120px;
+    margin: 0 auto;
+    height: 55px;
+    line-height: 55px;
+}
+.is-user-con .is-menu-con .link {
+    color:#fff;
+    display: block;
+}
+.is-user-con .is-menu-con .link.active {
+    color:#b0b0b0;
+    background-color: #fff;
+}
+.is-user-con .is-menu-con .link-item {
+    width: 16.6%;
+    text-align: center;
+}
+
+
+/* 个人中心内容区 */
+.is-content-con .is-content-inner {
+    width: 1120px;
+    margin: 0 auto;
+}
+.is-content-inner .self-index {
+    
+}
+.is-content-inner .self-index .self-amout-info {
+    text-align: center;
+    font-size: 16px;
+    color: #b2b2b2;
+    padding: 50px 0;
+    border-bottom: 1px solid #eee;
+}
+.is-content-inner .self-index p.amount {
+    font-size: 21px;
+    color: #ea9e8c;    
+    padding: 10px 0;
+}
+.self-index .trip-list,
+.self-index .recent-trip-list {
+	padding: 0 0 50px 0;
+    color: #bebebe;
+    border-bottom: 1px solid #eee;
+}
+.self-index .trip-list .title-plain,
+.self-index .recent-trip-list .title-plain {
+	font-size: 20px;
+	padding: 20px;
+}
+.self-index .trip-list .table-title,
+.self-index .recent-trip-list .table-title {
+    text-align: center;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+}
+.self-index .trip-list .data-list,
+.self-index .recent-trip-list .data-list {
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
