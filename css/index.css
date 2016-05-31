@@ -27,6 +27,7 @@ body,html {
 /* 头部轮播样式 */
 .is-carousel-con {
     position: relative;
+    overflow: hidden;
 }
 .is-carousel-con .carousel-item {
     height: 560px;
