@@ -209,4 +209,6 @@
 	color: #666
 }
 
-
+.is-footer-title,.is-footer-func{
+	display: none;
+}

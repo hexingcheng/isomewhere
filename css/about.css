@@ -76,3 +76,7 @@
 	padding: 10px 0;
 	font-size: 14px;
 }
+
+.is-footer-title,.is-footer-func{
+	display: none;
+}
