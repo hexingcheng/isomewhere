@@ -40,6 +40,7 @@ body,html {
 .is-user-con .is-menu-con .link {
     color:#fff;
     display: block;
+    font-size: 16px;
 }
 .is-user-con .is-menu-con .link.active {
     color:#b0b0b0;
@@ -67,7 +68,7 @@ body,html {
     margin: 0 auto;
 }
 .is-content-inner .self-index {
-    
+    padding: 30px 0 50px 0;
 }
 .is-content-inner .self-index .self-amout-info {
     text-align: center;
@@ -110,11 +111,13 @@ body,html {
 
 /* 行程单列表 */
 .trip-list, .order-list {
-    padding: 10px 0 30px 0;
+    padding: 30px 0 50px 0;
     color: #bebebe;
 }
-.trip-list .self-trip-list,
-.order-list .order-amount {
+.trip-list .self-trip-list:first-child {
+    margin-top: 0px;
+}
+.trip-list .self-trip-list {
     margin-top: 40px;
 }
 .trip-list .trip-title {
@@ -131,13 +134,15 @@ body,html {
 	padding: 30px 0;
     border-bottom: 1px solid #eee;
 }
-.trip-list .list-item .btn-group {
+.trip-list .list-item .btn-group,
+.travel-list .travel-item .btn-group {
     width: 200px;
     text-align: center;
     position: relative;
     top: 10px;
 }
-.trip-list .list-item .btn-group button {
+.trip-list .list-item .btn-group button,
+.travel-list .travel-item .btn-group button {
     width: 55px;
     height: 35px;
     background: #333;
@@ -160,18 +165,136 @@ body,html {
 }
 
 /* 我的订单 */
-.order-list .amount-num {
+.order-list .amount-num,
+.consume-list .amount-num{
     padding: 20px 0;
 }
-.order-list .amount-num li {
+.order-list .amount-num li,
+.consume-list .amount-num li {
 	text-indent: 20px;
 	font-size: 16px;
 }
-.order-list .amount-num li .num {
+.order-list .amount-num li .num,
+.consume-list .amount-num li .num {
 	color: #ea9e8c;
     font-size: 24px;
     padding: 0 3px;
 }
+
+
+/* 我的游记 */
+.travel-list {
+	padding: 30px 0 50px 0;
+}
+.travel-list .list-bar-title span {
+	color: #bebebe;
+}
+.travel-list .travel-item {
+    padding: 20px 0;
+}
+.travel-list .travel-item:last-child {
+    border-bottom: none;
+}
+.travel-list .travel-item .cover-img {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+}
+.travel-list .travel-item .cover-img img {
+    width: 130px;
+    height: 130px;
+}
+.travel-list .travel-item .travel-content {
+    margin: 0 230px 0 180px;
+    width: auto;height: 130px;
+}
+.travel-list .travel-item .travel-content span {
+    height: 100%;
+    font-size: 20px;
+    line-height: 25px;
+	color: #bebebe;
+}
+.travel-list .travel-item .travel-content span.time-date {
+    line-height: 130px;
+}
+.travel-list .travel-item .travel-content .text-title {
+    display: table;
+}
+.travel-list .travel-item .travel-content .text-title .inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.travel-list .travel-item .btn-group {
+	top: 45px;
+}
+
+
+/* 充值和消费 */
+.consume-list,
+.settings-list {
+    color: #bebebe;
+	padding: 30px 0 50px 0;
+}
+.consume-list .consume-amount {
+	padding: 30px 0 50px 0;
+}
+
+/* 账户设置 */
+.settings-list {
+
+}
+.settings-list .settings-wrap p.input-row {
+    padding: 20px;
+}
+.settings-list .settings-wrap label {
+    font-size: 16px;
+    padding-right: 10px;
+}
+.settings-list .settings-wrap input[type=text] {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 40px;
+    width: 440px;
+    outline: none;
+}
+.settings-list .settings-wrap input[type=text]:focus {
+    border-bottom: 1px solid #3665AB;
+}
+.settings-list .settings-wrap .radio-group {
+    margin-left: 40px;
+}
+.settings-list .settings-wrap .radio-group .radio {
+    vertical-align: bottom;
+    margin-right: 31px;
+}
+.settings-list .settings-wrap .set-headimg-box {
+    width: 300px;padding: 50px 0 0 0;
+}
+.settings-list .settings-wrap .img-box {
+	width: 100px;height: 100px;margin: 0 auto;
+}
+.settings-list .settings-wrap .img-box img {
+	width: 100px;height: 100px;
+}
+.settings-list .settings-wrap .set-headimg-btngroup {
+	padding: 20px 0;
+}
+.settings-list .settings-wrap .set-headimg-box .txt-plain {
+	padding: 5px 0;
+}
+.settings-list .settings-wrap .set-headimg {
+	width: 55px;
+    height: 30px;
+    background: #333;
+    color: #fff !important;
+}
+.settings-list .settings-wrap .set-main-box {
+    margin-right: 300px;
+    border-right: 1px solid #eee;
+}
+
+
+
 
 
 

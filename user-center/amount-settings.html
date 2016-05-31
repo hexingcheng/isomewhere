@@ -57,33 +57,56 @@
     		<ul class="is-menu-con clearfix">
     			<li class="link-item pull-left"><a href="user.html" class="link">个人主页</a></li>
     			<li class="link-item pull-left"><a href="trip-list.html" class="link">行程单列表</a></li>
-    			<li class="link-item pull-left"><a href="order-list.html" class="link active">我的订单</a></li>
+    			<li class="link-item pull-left"><a href="order-list.html" class="link">我的订单</a></li>
     			<li class="link-item pull-left"><a href="travels-list.html" class="link">我的游记</a></li>
     			<li class="link-item pull-left"><a href="consume-record.html" class="link">充值和消费</a></li>
-    			<li class="link-item pull-left"><a href="amount-settings.html" class="link">账户设置</a></li>
+    			<li class="link-item pull-left"><a href="amount-settings.html" class="link active">账户设置</a></li>
     		</ul>
     	</div>
     	<div class="is-content-con">
     		<div class="is-content-inner">
-    			<div class="order-list">
-    				<div class="order-amount">
+    			<div class="settings-list">
+    				<div class="settings-amount">
                         <h3 class="list-bar-title">
-                            <span>我的订单</span>
+                            <span>基本信息</span>
                         </h3>
-                        <ul class="pb-row amount-num">
-                            <li class="pb-col-3">
-                                共有<span class="num">2</span>个订单
-                            </li>
-                            <li class="pb-col-3">
-                                待支付：<span class="num">2</span>   
-                            </li>
-                            <li class="pb-col-3">
-                                已支付：<span class="num">2</span>   
-                            </li>
-                            <li class="pb-col-3">
-                                已过期：<span class="num">2</span> 
-                            </li>
-                        </ul>
+                        <div class="settings-wrap">
+                            <div class="set-headimg-box pull-right">
+                                <div class="img-box border-circle">
+                                    <img src="../image/head-img.png" height="160" width="160" alt="">
+                                </div>
+                                <p class="text-center set-headimg-btngroup">
+                                    <button class="pb-btn set-headimg">更换头像</button>
+                                </p>
+                                <p class="txt-plain text-center">图片大小不超过1M</p>
+                                <p class="txt-plain text-center">支持jpg,png</p>
+                            </div>
+                            <div class="set-main-box">
+                                <p class="input-row">
+                                    <label for="">昵称</label>
+                                    <input type="text" placeholder="不超过10字" maxlength="10" class="nickname">
+                                </p>
+                                <p class="input-row">
+                                    <label for="">姓名</label>
+                                    <input type="text" placeholder="填写真实姓名方便导游与您联系" maxlength="10" class="name">
+                                </p>
+                                <p class="input-row">
+                                    <label for="">手机</label>
+                                    <input type="text" placeholder="手机号码" maxlength="11" class="telphone">
+                                </p>
+                                <p class="input-row">
+                                    <label for="">性别</label>
+                                    <span class="radio-group">
+                                        <label for="">男</label><input checked="checked" type="radio" name="sex" class="radio">
+                                        <label for="">女</label><input type="radio" name="sex" class="radio">
+                                    </span>
+                                </p>
+                                <p class="input-row">
+                                    <label for="">昵称</label>
+                                    <input type="text" placeholder="国家，省市，区" class="city">
+                                </p>
+                            </div>
+                        </div>
                     </div>
     			</div>
     		</div>
