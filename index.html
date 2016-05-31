@@ -43,8 +43,22 @@
     </div>
 	<div class="is-content">
 		<div class="is-carousel-con">
-			<div class="carousel-item">
-				<img src="image/carousel-2.png" height="973" width="1946" alt="">
+			<div class="carousel-item" id="banner_tabs">
+				<ul class="slides">
+					<li>
+						<img src="image/alpha.png" width="100%" style="background-image: url(image/carousel-2.png);" alt="">
+					</li>
+					<li>
+						<img src="image/alpha.png" width="100%" style="background-image: url(image/carousel-3.png);" alt="">
+					</li>
+					<li>
+						<img src="image/alpha.png" width="100%" style="background-image: url(image/carousel-1.png);" alt="">
+					</li>
+				</ul>
+				<ul class="flex-direction-nav">
+					<li><a class="flex-prev" href="javascript:;">Previous</a></li>
+					<li><a class="flex-next" href="javascript:;">Next</a></li>
+				</ul>
 			</div>
 			<div class="content-con">
 				<div class="text-plain">
@@ -402,5 +416,26 @@
             </div>
         </div>
     </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script type="text/javascript">
+		$(function() {
+			var bannerSlider = new Slider($('#banner_tabs'), {
+				time: 5000,
+				delay: 400,
+				event: 'hover',
+				auto: true,
+				mode: 'fade',
+				controller: $('#bannerCtrl'),
+				activeControllerCls: 'active'
+			});
+			$('#banner_tabs .flex-prev').click(function() {
+				bannerSlider.prev()
+			});
+			$('#banner_tabs .flex-next').click(function() {
+				bannerSlider.next()
+			});
+		})
+	</script>
 </body>
 </html>
