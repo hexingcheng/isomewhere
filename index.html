@@ -537,8 +537,9 @@
 			        container: $(container),
 			        onChange: function(view, elements) {
 				        if (view == 'days') {
+				        	var day = new Date().getDate();
 				            elements.each(function() {
-			                	if ($(this).data('date').match(/\-24$/))
+			                	if ($(this).data('date').split("-")[2] == day)
 				                    $(this).css({
 				                        background: '#C40000',
 				                        color: '#FFF'
