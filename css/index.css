@@ -46,9 +46,15 @@ body,html {
     color: #fff;
 }
 .is-carousel-con .text-plain {
-    position: absolute;
+    /*position: absolute;
     top: 196px;
-    margin-left: 100px;
+    margin-left: 100px;*/
+    position: absolute;
+    top: 36%;
+    width: 900px;
+    height: 100px;
+    left: 15%;
+    color: #fff;
 }
 .is-carousel-con .bottom-bar {
     position: absolute;
