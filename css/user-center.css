@@ -43,7 +43,7 @@ body,html {
     font-size: 16px;
 }
 .is-user-con .is-menu-con .link.active {
-    color:#b0b0b0;
+    color:#444;
     background-color: #fff;
 }
 .is-user-con .is-menu-con .link-item {
@@ -73,20 +73,25 @@ body,html {
 .is-content-inner .self-index .self-amout-info {
     text-align: center;
     font-size: 16px;
-    color: #b2b2b2;
+    color: #444;
     padding: 50px 0;
     border-bottom: 1px solid #eee;
 }
 
 .is-content-inner .self-index p.amount {
-    font-size: 21px;
-    color: #ea9e8c;    
+    font-size: 25px;    
     padding: 10px 0;
+}
+.is-content-inner .self-index p a {
+    color: #BD4F34;
+}
+.is-content-inner .self-index p a:hover {
+    text-decoration: underline;
 }
 .self-index .new-trip-list,
 .self-index .recent-trip-list {
 	padding: 0 0 50px 0;
-    color: #bebebe;
+    color: #444;
     border-bottom: 1px solid #eee;
 }
 .self-index .new-trip-list .title-plain,
@@ -112,7 +117,7 @@ body,html {
 /* 行程单列表 */
 .trip-list, .order-list {
     padding: 30px 0 50px 0;
-    color: #bebebe;
+    color: #444;
 }
 .trip-list .self-trip-list:first-child {
     margin-top: 0px;
@@ -126,6 +131,7 @@ body,html {
 }
 .trip-list .trip-title a {
     font-size: 16px;
+    color: #57A0DA;
 }
 .trip-list .trip-title span {
 	font-size: 20px;
@@ -187,7 +193,7 @@ body,html {
 	padding: 30px 0 50px 0;
 }
 .travel-list .list-bar-title span {
-	color: #bebebe;
+	color: #444;
 }
 .travel-list .travel-item {
     padding: 20px 0;
@@ -212,7 +218,7 @@ body,html {
     height: 100%;
     font-size: 20px;
     line-height: 25px;
-	color: #bebebe;
+	color: #444;
 }
 .travel-list .travel-item .travel-content span.time-date {
     line-height: 130px;
@@ -223,6 +229,10 @@ body,html {
 .travel-list .travel-item .travel-content .text-title .inner {
     display: table-cell;
     vertical-align: middle;
+    color: #444;
+}
+.travel-list .travel-item .travel-content .text-title .inner:hover {
+    text-decoration: underline;
 }
 .travel-list .travel-item .btn-group {
 	top: 45px;
@@ -232,7 +242,7 @@ body,html {
 /* 充值和消费 */
 .consume-list,
 .settings-list {
-    color: #bebebe;
+    color: #444;
 	padding: 30px 0 50px 0;
 }
 .consume-list .consume-amount {
