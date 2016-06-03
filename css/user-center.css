@@ -57,6 +57,9 @@ body,html {
     border-bottom: 1px solid #eee;
     font-size: 20px;
 }
+h3.list-bar-title>span {
+    color: #222;
+}
 .num-color {
 	color: #ea9e8c;
     font-size: 24px;
@@ -135,6 +138,7 @@ body,html {
 }
 .trip-list .trip-title span {
 	font-size: 20px;
+    color: #222;
 }
 .trip-list .list-item {
 	padding: 30px 0;
