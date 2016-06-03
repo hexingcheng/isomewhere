@@ -56,6 +56,12 @@ body,html {
     left: 15%;
     color: #fff;
 }
+.is-carousel-con .text-plain h1 {
+    font-size: 46px;
+}
+.is-carousel-con .text-plain p {
+    font-size: 18px;
+}
 .is-carousel-con .bottom-bar {
     position: absolute;
     width: 100%;width: 1120px;
@@ -300,8 +306,20 @@ body,html {
 .reqirement-item .inner-con .auther {
     padding: 5px 10px;
 }
+.reqirement-item .inner-con .auther a {
+    color: #afafaf;
+}
+.reqirement-item .inner-con .auther a:hover {
+    text-decoration: underline;
+}
 .reqirement-item .inner-con .location {
     padding: 5px 10px;
+}
+.reqirement-item .inner-con .location .place {
+    color: #afafaf;
+}
+.reqirement-item .inner-con .location .place:hover {
+    text-decoration: underline;
 }
 .reqirement-item .inner-con .location .place img {
     width: 10px;height: 16px;
