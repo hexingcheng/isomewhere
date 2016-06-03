@@ -33,6 +33,7 @@
 	padding-top: 28px;
 }
 .is-as-text{
+	font-size: 16px;
 	line-height: 22px;
 	padding-bottom: 26px;
 	text-align: center;
@@ -68,6 +69,7 @@
 	padding-top: 20px;
 }
 .is-find-p{
+	font-size: 16px;
 	margin-bottom: 36px;
 	text-align: center;
 	color: #666666;
@@ -96,9 +98,10 @@
 	margin:0 auto;
 }
 .is-value-intro{
+
 	line-height: 52px;
 	text-align: center;
-	font-size: 14px;
+	font-size: 16px;
 	color: #666666;
 }
 .is-value-d-item{
@@ -123,7 +126,7 @@
 }
 .is-inner-detail{
 	padding: 0 8px;
-	font-size: 14px;
+	font-size: 16px;
 	color: #333;
 	text-align: center;
 	line-height: 28px;

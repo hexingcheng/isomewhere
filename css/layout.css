@@ -37,7 +37,7 @@ a{
 	width: 1120px;
 }
 .is-login-btn{
-	margin-left: 50px;
+	margin-left: 304px;
 	color: #fff;
 	line-height: 78px;
 	height: 78px;
@@ -54,7 +54,7 @@ a{
 	margin-top: 13px;
 }
 .is-nav{
-	width: 750px;
+	width: 990px;
 	height: 78px;
 }
 .is-nav-item{
@@ -69,7 +69,7 @@ a{
 	height: 54px;
 }
 span.is-en {
-    font-size: 14px;
+    /*font-size: 14px;*/
 }
 span.is-cn {
     font-size: 16px;
